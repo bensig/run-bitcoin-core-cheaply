@@ -34,17 +34,17 @@ Here is what my server usage looks like while synchronizing with the bitcoin cha
 <img width="680" alt="image" src="https://user-images.githubusercontent.com/1872138/184553692-9e5f64d3-8da7-46d7-8d70-d4e025b34948.png">
 
 ## Steps to Install Bitcoin Core (bitcoind)
-* Purchase a server running Debian or Ubuntu using the links above
-* SSH to the server
-* Update apt `apt update && apt upgrade -y`
-* Download bitcoind `wget https://bitcoin.org/bin/bitcoin-core-22.0/bitcoin-22.0-x86_64-linux-gnu.tar.gz`
-* (if you are running debian9, then use an older version of bitcoind: `wget bitcoin-0.19.0.1-x86_64-linux-gnu.tar.gz`)
-* Unpack `tar -zxvf bitcoin-22.0-x86_64-linux-gnu.tar.gz`
-* Install `sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-22.0/bin/*`
-* Run once to see if it works `bitcoind -daemon`
-* Check log file `tail -f ~/.bitcoin/debug.log` 
-* Stop bitcoind `bitcoin-cli stop`
-* Set up your bitcoin.conf file `nano ~/.bitcoin/bitcoin.conf` file - recommend using the info below with own rpc user/pass here:
+1. Purchase a server running Debian or Ubuntu using the links above
+2. SSH to the server
+3. Update apt `apt update && apt upgrade -y`
+4. Download bitcoind `wget https://bitcoin.org/bin/bitcoin-core-22.0/bitcoin-22.0-x86_64-linux-gnu.tar.gz`
+5. (if you are running debian9, then use an older version of bitcoind: `wget bitcoin-0.19.0.1-x86_64-linux-gnu.tar.gz`)
+6. Unpack `tar -zxvf bitcoin-22.0-x86_64-linux-gnu.tar.gz`
+7. Install `sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-22.0/bin/*`
+8. Run once to see if it works `bitcoind -daemon`
+9. Check log file `tail -f ~/.bitcoin/debug.log` 
+10. Stop bitcoind `bitcoin-cli stop`
+11. Set up your bitcoin.conf file `nano ~/.bitcoin/bitcoin.conf` file - recommend using the info below with own rpc user/pass here:
  ```
 rpcuser=bitcoin 
 rpcpassword=bitcoinpass 
@@ -56,7 +56,7 @@ maxuploadtarget=250
 txindex=1
 server=1
  ```
-* Check the sync of your bitcoin node - I have written a little script here https://gist.github.com/bensig/4793be2327b1d535a70046a759a5e696
+12. Check the sync of your bitcoin node - I have written a little script here https://gist.github.com/bensig/4793be2327b1d535a70046a759a5e696
 
 ## Installing electrum and mempool
 Follow the install steps in their Github here:
