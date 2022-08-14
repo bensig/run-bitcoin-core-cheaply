@@ -59,6 +59,6 @@ server=1
 * Check the sync of your bitcoin node - I have written a little script here https://gist.github.com/bensig/4793be2327b1d535a70046a759a5e696
 
 ## Installing electrum and mempool
-Follow the steps in the Github here:
-Electrs v0.99 - https://github.com/romanz/electrs/blob/v0.8.0/doc/usage.md
-Mempool v2.4.1 - https://github.com/mempool/mempool/tree/v2.4.1/backend#setup
+Follow the install steps in their Github here:
+* Electrs v0.99 - https://github.com/romanz/electrs/blob/v0.8.0/doc/usage.md
+* Mempool v2.4.1 - https://github.com/mempool/mempool/tree/v2.4.1/backend#setup
