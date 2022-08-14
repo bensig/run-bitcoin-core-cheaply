@@ -11,23 +11,27 @@ https://bitcoin.org/en/bitcoin-core/features/requirements
 <img width="739" alt="image" src="https://user-images.githubusercontent.com/1872138/184553857-2f73ce22-05ba-4c73-b102-7573a66559dc.png">
 
 
-##Examples of Cheap "Storage VPS" Service Providers:
+## Options for Cheap "Storage VPS" Service Providers:
 
+#### Interserver
+
+**Note: tested this and could not get an OS to install**
 https://www.interserver.net/vps/storage.html
 $6/month for 1TB / 1 CPU / 4GB RAM
 
-**Note: tested this and could not get an OS to install**
-
+#### Time4VPS
+**Note: only supports older OS (example Debian 9, Ubuntu 16.04) - so you will need to run older versions of bitcoind**
 https://time4vps.com
 €4.49/month for 1TB / 1 CPU / 2GB RAM
 
-**Note: only supports older OS (example Debian 9, Ubuntu 16.04) - so you will need to run older versions of bitcoind**
 Here is what my server usage looks like while synchronizing with the bitcoin chain:
 <img width="680" alt="image" src="https://user-images.githubusercontent.com/1872138/184553692-9e5f64d3-8da7-46d7-8d70-d4e025b34948.png">
 
+#### Contabo
+
+**Note: seems like the best bang for your buck even though it's twice some of the others**
 https://contabo.com/en/storage-vps
 $10.99/month for 700GB / 4 CPU / 10GB RAM 
-**Note: seems like the best bang for your buck even though it's twice some of the others**
 
 ## Steps to Install Bitcoin Core (bitcoind)
 * Purchase a server running Debian or Ubuntu using the links above
