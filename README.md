@@ -1,4 +1,4 @@
-#How to Run Bitcoin Core, Mempool, Electrum for $5/month
+# How to Run Bitcoin Core, Mempool, Electrum for $5/month
 
 When you run your own node, you can verify transaction data, and get transaction data from a source you can trust completely.
 
@@ -6,7 +6,7 @@ You can run your own Bitcoin Node if you want to do anything that uses Bitcoin A
 If you need Bitcoin API access, it's probably cheaper to run your own node than to go to a service provider. 
 You can easily run your own Bitcoin Node by getting a hosted "Storage VPS" since Bitcoin Core requires a lot of storage. 
 
-##Minimum Requirements to run Bitcoin Core
+## Minimum Requirements to run Bitcoin Core
 https://bitcoin.org/en/bitcoin-core/features/requirements
 <img width="739" alt="image" src="https://user-images.githubusercontent.com/1872138/184553857-2f73ce22-05ba-4c73-b102-7573a66559dc.png">
 
@@ -29,7 +29,7 @@ https://contabo.com/en/storage-vps
 $10.99/month for 700GB / 4 CPU / 10GB RAM 
 **Note: seems like the best bang for your buck even though it's twice some of the others**
 
-##Steps to Install Bitcoin Core (bitcoind)
+## Steps to Install Bitcoin Core (bitcoind)
 * Purchase a server running Debian or Ubuntu using the links above
 * SSH to the server
 * Update apt `apt update && apt upgrade -y`
@@ -54,7 +54,7 @@ server=1
  ```
 * Check the sync of your bitcoin node - I have written a little script here https://gist.github.com/bensig/4793be2327b1d535a70046a759a5e696
 
-##Installing electrum and mempool
+## Installing electrum and mempool
 Follow the steps in the Github here:
 Electrs v0.99 - https://github.com/romanz/electrs/blob/v0.8.0/doc/usage.md
 Mempool v2.4.1 - https://github.com/mempool/mempool/tree/v2.4.1/backend#setup
