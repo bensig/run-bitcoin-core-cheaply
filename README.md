@@ -41,9 +41,9 @@ Here is what my server usage looks like while synchronizing with the bitcoin cha
 5. (if you are running debian9, then use an older version of bitcoind: `wget bitcoin-0.19.0.1-x86_64-linux-gnu.tar.gz`)
 6. Unpack `tar -zxvf bitcoin-22.0-x86_64-linux-gnu.tar.gz`
 7. Install `sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-22.0/bin/*`
-8. Run once to see if it works `bitcoind -daemon`
+8. Run once to see if it works by just running `bitcoind`
 9. Check log file `tail -f ~/.bitcoin/debug.log` 
-10. Stop bitcoind `bitcoin-cli stop`
+10. Stop bitcoind (press control-C)
 11. Set up your bitcoin.conf file `nano ~/.bitcoin/bitcoin.conf` file - recommend using the info below with own rpc user/pass here:
  ```
 rpcuser=bitcoin 
